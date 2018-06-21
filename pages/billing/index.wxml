@@ -1,0 +1,17 @@
+<!--pages/billing/index.wxml-->
+<view class="container">
+  <view class="number">
+    <text>当前单车编号： {{number}}</text>
+  </view>
+  <view class="time">
+    <view class="time-titile">{{actionText}}</view>
+    <view class="time-content">
+      {{hours}}: {{minutes}}: {{seconds}}    
+    </view>
+  </view>
+  <view class="endride">
+    <button type="warn" bindtap="endride" disabled='{{clickBtn}}'>结束骑行</button>
+    <button type="primary" bindtap="movetoindex">回到地图</button>
+    <!-- button也是一个微信组件，type是button的方法,disabled为true的时候就禁止点击 -->
+  </view>
+</view>
